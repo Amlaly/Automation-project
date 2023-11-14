@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+
+    <test name="SmokeTest">
+        <classes>
+            <class name="Login">
+            <methods>
+                <include name="validData"/>
+                             </methods>
+            </class >
+            <class name="Homepage">
+                <methods>
+                    <include name="AddHighestItem"/>
+                    <include name="LowestItem"/>
+                </methods>
+            </class>
+            <class name="Cart">
+                <methods>
+                    <include name="RemoveAndContinue"/>
+                </methods>
+            </class>
+            <class name="Checkout">
+                <methods>
+                    <include name="ValidDataWithContinue"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
